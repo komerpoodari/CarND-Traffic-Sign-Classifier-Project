@@ -131,18 +131,19 @@ My final model results were:
 * validation set accuracy of 0.994
 * test set accuracy of 0.95
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
 If a well known architecture was chosen:
 * What architecture was chosen?
+------
+*I chose LeNet architecture as baseline, which is hierarchical in nature to extract rudimentary features in earler layers and built to extract high level features in later layers.*
+
 * Why did you believe it would be relevant to the traffic sign application?
+-------------
+*I believe it is relevant for traffic sign classification as this problem involves extracting features that are prone to change their location depending on the image. Convolutional networks are good at local translation to recognize signs that prone to location variation in the images.*
+
 * How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+------------
+*By observing better validation accuracy of 99% and test accuracy of 95% and new test image prediction of 80%, I conclude that the model is working. Of course it can be improved further by augmenting the training examples for the signs that do not contain adequate number of examples in the given data set.*
 
 ### Test a Model on New Images
 
